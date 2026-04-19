@@ -6,6 +6,8 @@ Fork of [golang-migrate/migrate](https://github.com/golang-migrate/migrate) — 
 [![CI](https://github.com/migrate/migrate/actions/workflows/ci.yaml/badge.svg)](https://github.com/migrate/migrate/actions/workflows/ci.yaml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/migrate/migrate)](https://goreportcard.com/report/github.com/migrate/migrate)
 
+> **Personal fork** — primarily used with PostgreSQL and local filesystem sources. Other drivers are available but untested in this fork.
+
 ## Features
 
 - Supports multiple database drivers (PostgreSQL, MySQL, SQLite, and more)
@@ -86,7 +88,7 @@ Example:
 ## Supported Databases
 
 | Database   | Driver import path |
-|------------|--------------------|
+|------------|-----------------|
 | PostgreSQL | `github.com/migrate/migrate/v4/database/postgres` |
 | MySQL      | `github.com/migrate/migrate/v4/database/mysql` |
 | SQLite     | `github.com/migrate/migrate/v4/database/sqlite3` |
