@@ -42,6 +42,9 @@ migrate -path ./migrations -database "postgres://localhost:5432/mydb?sslmode=dis
 
 # Check current migration version
 migrate -path ./migrations -database "postgres://localhost:5432/mydb?sslmode=disable" version
+
+# Force a specific version (useful when migration state gets out of sync)
+migrate -path ./migrations -database "postgres://localhost:5432/mydb?sslmode=disable" force <version>
 ```
 
 ### Library
@@ -88,7 +91,7 @@ Example:
 ## Supported Databases
 
 | Database   | Driver import path |
-|------------|-----------------|
+|------------|------------------|
 | PostgreSQL | `github.com/migrate/migrate/v4/database/postgres` |
 | MySQL      | `github.com/migrate/migrate/v4/database/mysql` |
 | SQLite     | `github.com/migrate/migrate/v4/database/sqlite3` |
